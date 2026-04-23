@@ -1,6 +1,6 @@
 streamlit>=1.37
-pandas>=2.0
-numpy>=1.26
-pandas-datareader>=0.10
+pandas==2.1.4
+numpy==1.26.4
+pandas-datareader==0.10.0
 plotly>=5.20
 statsmodels>=0.14
