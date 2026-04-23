@@ -47,10 +47,10 @@ def load_fred_macro(start="1998-01-01", end=None) -> pd.DataFrame:
     unrate = web.DataReader("UNRATE",  "fred", start, end)
     cpi    = web.DataReader("CPIAUCSL","fred", start, end)
 
-    term_m   = term.resample("ME").last().rename(columns={"T10Y2Y": "term_spread"})
-    credit_m = credit.resample("ME").last().rename(columns={"BAA10YM": "credit_spread"})
-    unrate_m = unrate.resample("ME").last().rename(columns={"UNRATE": "unrate"})
-    cpi_m    = cpi.resample("ME").last()
+    term_m   = term.resample("M").last().rename(columns={"T10Y2Y": "term_spread"})
+    credit_m = credit.resample("M").last().rename(columns={"BAA10YM": "credit_spread"})
+    unrate_m = unrate.resample("M").last().rename(columns={"UNRATE": "unrate"})
+    cpi_m    = cpi.resample("M").last()
 
     unrate_m["unrate_chg12"] = unrate_m["unrate"] - unrate_m["unrate"].shift(12)
     cpi_m["inflation_yoy"]   = cpi_m["CPIAUCSL"].pct_change(12)
