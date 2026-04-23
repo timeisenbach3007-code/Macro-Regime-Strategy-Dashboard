@@ -148,7 +148,7 @@ with tab1:
         x=full.index, y=full["cumret_bench"],
         name="Market benchmark", line=dict(color="gray", width=2),
     ))
-        split_date = pd.Timestamp(strat.TRAIN_END)
+    split_date = pd.Timestamp(strat.TRAIN_END)
     fig.add_shape(
         type="line", x0=split_date, x1=split_date, y0=0, y1=1, yref="paper",
         line=dict(color="black", dash="dot", width=1),
