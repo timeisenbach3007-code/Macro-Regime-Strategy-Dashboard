@@ -27,7 +27,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("Macro Regime Timing Strategy")
+st.title("Macro Regime Timing Strategy - Dashboard")
 st.caption(
     "Forward-looking macro risk score × Markov-chain allocation between "
     "risk-on (small/growth) and risk-off (big/value) Ken French portfolios. "
