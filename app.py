@@ -30,7 +30,7 @@ st.set_page_config(
 st.title("Macro Regime Timing Strategy - Dashboard")
 st.caption(
     "As a part of our Python for Finance Class at Católica Lisbon School of Business and Economics we " \
-    "defined the following Macro Regime Stratgey. It contains of a Forward-looking macro risk score and Markov-chain allocation between "
+    "defined the following Macro Regime Strategy. It contains of a Forward-looking macro risk score and Markov-chain allocation between "
     "risk-on (small/growth) and risk-off (big/value) Ken French portfolios. "
     "Data auto-refreshes daily from FRED + Ken French."
 )
